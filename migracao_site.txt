@@ -1,0 +1,66 @@
+UPDATE tbl_options
+SET option_value = REPLACE(option_value,
+'http://divinopolis.misericordia.com.br', 'https://www.misericordia.com.br/blog/aimdivinopolis')
+WHERE option_name = 'home'
+OR option_name = 'siteurl'
+
+##
+
+UPDATE tbl_posts
+SET guid = REPLACE (guid,
+'http://divinopolis.misericordia.com.br', 'https://www.misericordia.com.br/blog/aimdivinopolis');
+
+
+##
+
+UPDATE tbl_posts
+SET post_content = REPLACE (post_content,
+'http://divinopolis.misericordia.com.br', 'https://www.misericordia.com.br/blog/aimdivinopolis');
+
+##
+
+UPDATE tbl_posts
+SET post_content = REPLACE (post_content,
+'src="http://divinopolis.misericordia.com.br','src="https://www.misericordia.com.br/blog/aimdivinopolis');
+
+##
+
+UPDATE tbl_posts
+SET guid = REPLACE (guid,
+'http://divinopolis.misericordia.com.br', 'src="https://www.misericordia.com.br/blog/aimdivinopolis')
+WHERE post_type = 'attachment';
+
+
+
+####
+
+TBL NOVO
+
+UPDATE tbl_options
+SET option_value = REPLACE(option_value,
+'http://divinopolis.misericordia.com.br', 'https://www.misericordia.com.br/blog/aimdivinopolis')
+WHERE option_name = 'home'
+OR option_name = 'siteurl'
+
+UPDATE tbl_posts
+SET guid = REPLACE (guid,
+'http://divinopolis.misericordia.com.br', 'https://www.misericordia.com.br/blog/aimdivinopolis');
+
+UPDATE tbl_posts
+SET post_content = REPLACE (post_content,
+'http://divinopolis.misericordia.com.br', 'https://www.misericordia.com.br/blog/aimdivinopolis');
+
+UPDATE tbl_posts
+SET post_content = REPLACE (post_content,
+'src="http://divinopolis.misericordia.com.br','src="https://www.misericordia.com.br/blog/aimdivinopolis');
+
+UPDATE tbl_posts
+SET guid = REPLACE (guid,
+'http://divinopolis.misericordia.com.br', 'src="https://www.misericordia.com.br/blog/aimdivinopolis')
+WHERE post_type = 'attachment';
+
+
+
+
+
+
